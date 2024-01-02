@@ -51,6 +51,9 @@ export class EDAAppStack extends cdk.Stack {
         entry: `${__dirname}/../lambdas/processImage.ts`,
         timeout: cdk.Duration.seconds(15),
         memorySize: 128,
+        environment: {
+          TABLE_NAME: imageTable.tableName
+        }
       }
     );
 
@@ -84,6 +87,7 @@ export class EDAAppStack extends cdk.Stack {
     // Permissions
 
     imagesBucket.grantRead(processImageFn);
+    imageTable.grantWriteData(processImageFn);
 
     confirmMailerFn.addToRolePolicy(
       new iam.PolicyStatement({
