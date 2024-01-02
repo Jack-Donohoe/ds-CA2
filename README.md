@@ -4,13 +4,13 @@ __Name:__ Jack Donohoe
 
 __YouTube Demo link__ - https://youtu.be/YyROE8k0quI
 
-### Phase 1.
+### Phase 1
 
 + Confirmation Mailer - Fully implemented.
 + Rejection Mailer - Fully implemented.
 + Process Image - Fully implemented
 
-### Phase 2 (if relevant).
+### Phase 2
 
 + Confirmation Mailer - Fully implemented.
 + Rejection Mailer - Fully implemented.
